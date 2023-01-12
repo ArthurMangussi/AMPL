@@ -1,0 +1,17 @@
+reset;
+
+# Carregando o modelo
+model ex_grafo_origem.mod;
+
+# Carregando os dados
+data ex_grafo_origem.dat;
+
+
+# Mudando o solver (opcional)
+option solver gurobi;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x, Z;

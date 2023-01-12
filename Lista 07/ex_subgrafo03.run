@@ -1,0 +1,18 @@
+reset;
+
+# Carregando o modelo
+model ex_subgrafo03.mod;
+
+# Carregando os dados
+data ex_subgrafo03.dat;
+
+
+# Mudando o solver (opcional)
+option solver gurobi;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x, Z;
+

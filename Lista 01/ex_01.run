@@ -1,0 +1,14 @@
+# Resetar o ampl 
+reset;
+
+#Carrega o modelo do problema no arquivo.mod
+include ex_01.mod;
+
+# Selecionar o solver 
+option solver cplex;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x1, x2, z;

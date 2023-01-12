@@ -1,0 +1,16 @@
+reset;
+
+# Carregando o modelo
+model linha_montagem.mod;
+
+# Carregando os dados do problema
+data linha_montagem.dat;
+
+# Mudando o solver (opcional)
+option solver gurobi;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display y, Z;

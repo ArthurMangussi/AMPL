@@ -1,0 +1,11 @@
+reset;
+
+#Carregando o modelo
+model exercicio_tres.mod;
+
+#Escolhendo o solver
+option solver cplex;
+
+solve;
+
+display x,y,z;

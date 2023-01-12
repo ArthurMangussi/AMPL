@@ -1,0 +1,12 @@
+#Resetando o kernel 
+reset;
+
+#Carregando o modelo
+model exercicio_quatro.mod;
+
+#Determinando o solver a ser utilizado
+option solve gurobi;
+
+solve;
+
+display x,y,Z;

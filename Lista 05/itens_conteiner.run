@@ -1,0 +1,17 @@
+reset;
+
+# Carregando o modelo
+model itens_conteiner.mod;
+
+# Carregando os dados
+data itens_conteiner.dat;
+
+
+# Mudando o solver (opcional)
+option solver gurobi;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x, Z;

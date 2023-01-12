@@ -1,0 +1,11 @@
+reset;
+
+#Carregando o modelo
+model exe_quatro_dual.mod;
+
+#Escolhendo o solver
+option solver cplex;
+
+solve;
+
+display y1,y2, Z;

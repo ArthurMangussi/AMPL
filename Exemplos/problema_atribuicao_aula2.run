@@ -1,0 +1,16 @@
+reset;
+
+# Carregando o modelo
+model problema_atribuicao_aula2.mod;
+
+#Carregando dados 
+data problema_atribuicao_aula02.dat;
+
+# Mudando o solver (opcional)
+option solver gurobi;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x;

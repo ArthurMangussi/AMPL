@@ -1,0 +1,14 @@
+# Resetar o ampl enviroment
+reset;
+
+# Carregando o modelo
+model problema_da_dieta.mod;
+
+# Mudando o solver (opcional)
+option solver cplex;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x1, x2, x3, z;

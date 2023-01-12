@@ -1,0 +1,14 @@
+#Resetando o kernel
+reset;
+
+#Carregando o modelo 
+model exercicio_2a.mod;
+#Carregando dados 
+data exercicio_2a.dat;
+
+#Escolhendo o solver
+option solver cplex;
+
+solve;
+
+display x,Z;

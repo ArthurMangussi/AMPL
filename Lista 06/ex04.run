@@ -1,0 +1,11 @@
+reset;
+
+#Carregando o modelo
+model ex04.mod;
+
+#Escolhendo o solver 
+option solver gurobi;
+
+solve;
+
+display x1, x2, Z;

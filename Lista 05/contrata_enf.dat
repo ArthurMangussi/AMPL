@@ -1,0 +1,3 @@
+# Demanda de enfermeiras nos dias da semana
+param D:= 1 12 2 6 3 8 4 5 5 9 6 10 7 15; 
+

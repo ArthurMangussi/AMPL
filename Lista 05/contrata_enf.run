@@ -1,0 +1,16 @@
+reset;
+
+# Carregando o modelo
+model contrata_enf.mod;
+
+#Carregando dados 
+data contrata_enf.dat;
+
+# Mudando o solver (opcional)
+option solver gurobi;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x , Z;

@@ -1,0 +1,17 @@
+reset;
+
+# Carregando o modelo
+model minimum_cost.mod;
+
+# Carregando os dados
+data minimum_cost.dat;
+
+
+# Mudando o solver (opcional)
+option solver gurobi;
+
+# Solve
+solve;
+
+# Mostrando os resultados
+display x, cost;

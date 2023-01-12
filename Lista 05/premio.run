@@ -1,0 +1,14 @@
+reset;
+
+#Carregando o modelo
+model premio.mod;
+
+#Carregando os dados;
+data premio.dat;
+
+#Escolhendo o solver
+option solver gurobi;
+
+solve;
+
+display x,Z;
